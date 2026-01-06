@@ -1,6 +1,6 @@
 return { -- Collection of various small independent plugins/modules
-	"echasnovski/mini.nvim",
-	config = function()
+	-- "echasnovski/mini.nvim",
+	-- config = function()
 		-- Better Around/Inside textobjects
 		--
 		-- Examples:
@@ -32,7 +32,7 @@ return { -- Collection of various small independent plugins/modules
 		-- end
 
 		--  Check out: https://github.com/echasnovski/mini.nvim
-	end,
+	-- end,
 }
 
 -- vim: ts=2 sts=2 sw=2 et

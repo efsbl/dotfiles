@@ -74,7 +74,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
 		vim.keymap.set(
 			"n",
 			"<leader><leader>",
-			"<cmd>Telescope buffers sort_mru=true theme=ivy<cr>",
+			"<cmd>Telescope buffers sort_lastused=true theme=ivy<cr>",
 			{ desc = "Find existing buffers" }
 		)
 

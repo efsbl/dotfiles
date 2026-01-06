@@ -4,6 +4,8 @@ return {
 	-- "gc" to comment visual regions/lines
 	{ "numToStr/Comment.nvim", opts = {} },
 
+	{ "https://github.com/github/copilot.vim" },
+
 	{ -- Useful plugin to show you pending keybinds.
 		"folke/which-key.nvim",
 		event = "VimEnter", -- Sets the loading event to 'VimEnter'
@@ -38,6 +40,7 @@ return {
 				go = { "goimports", "gofumpt" },
 				-- Conform can also run multiple formatters sequentially
 				python = { "isort", "black" },
+				-- c = { "clang-format" },
 				--
 				-- You can use a sub-list to tell conform to run *until* a formatter
 				-- is found.
@@ -45,18 +48,18 @@ return {
 			},
 		},
 	},
-	{
-		"aktersnurra/no-clown-fiesta.nvim",
-		lazy = false, -- make sure we load this during startup if it is your main colorscheme
-		priority = 1000, -- make sure to load this before all the other start plugins
-		config = function()
-			require("no-clown-fiesta").setup({
-				transparent = true,
-			})
-			vim.cmd.colorscheme("no-clown-fiesta")
-			vim.cmd.hi("Comment gui=none")
-		end,
-	},
+	-- {
+	-- 	"aktersnurra/no-clown-fiesta.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		require("no-clown-fiesta").setup({
+	-- 			transparent = true,
+	-- 		})
+	-- 		vim.cmd.colorscheme("no-clown-fiesta")
+	-- 		-- vim.cmd.hi("Comment gui=none")
+	-- 	end,
+	-- },
 	--
 	-- {
 	-- 	"aliqyan-21/darkvoid.nvim",
@@ -76,24 +79,32 @@ return {
 	-- 	lazy = false, -- make sure we load this during startup if it is your main colorscheme
 	-- 	priority = 1000, -- make sure to load this before all the other start plugins
 	-- 	config = function()
-	-- 		-- vim.cmd.colorscheme("github_dark_default")
+	-- 		vim.cmd.colorscheme("github_dark_default")
 	-- 		-- vim.cmd.colorscheme("github_dark_tritanopia")
 	--
 	-- 		-- You can configure highlights by doing something like
 	-- 		-- vim.cmd.hi("Comment gui=none")
 	-- 	end,
 	-- },
-
 	-- {
 	-- 	"folke/tokyonight.nvim",
 	-- 	lazy = false, -- make sure we load this during startup if it is your main colorscheme
 	-- 	priority = 1000, -- make sure to load this before all the other start plugins
 	-- 	config = function()
-	-- 		-- vim.cmd.colorscheme("tokyonight-night")
+	-- 		vim.cmd.colorscheme("tokyonight-night")
 	-- 		-- You can configure highlights by doing something like
 	-- 		-- vim.cmd.hi("Comment gui=none")
 	-- 	end,
 	-- },
+	--
+	{
+		"AlexvZyl/nordic.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("nordic").load()
+		end,
+	},
 	-- {
 	-- 	"rebelot/kanagawa.nvim",
 	-- 	lazy = false,
@@ -103,9 +114,8 @@ return {
 	-- 			keywordStyle = { italic = false },
 	-- 			transparent = true,
 	-- 		})
-	-- 		-- vim.cmd.colorscheme("kanagawa-dragon")
+	-- 		vim.cmd.colorscheme("kanagawa-dragon")
 	-- 		-- vim.cmd.colorscheme("kanagawa-wave")
-	--
 	-- 	end,
 	-- },
 	-- {

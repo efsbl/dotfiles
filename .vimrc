@@ -35,5 +35,8 @@ nnoremap <leader>l :noh<CR>
 " Set status line
 set laststatus=2
 
+" Disable anooying beeping
+set noerrorbells
+
 " Set colorscheme
 colorscheme industry

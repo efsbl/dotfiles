@@ -8,7 +8,7 @@ return {
 				-- theme = "everforest",
 				-- theme = "tokyonight",
 				icons_enabled = false,
-				disabled_filetypes = { "NvimTree" },
+				disabled_filetypes = { "neo-tree" },
 			},
 			-- tabline = {
 			-- 	lualine_a = { "buffers" },
