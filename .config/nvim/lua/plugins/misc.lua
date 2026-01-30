@@ -39,7 +39,7 @@ return {
 				lua = { "stylua" },
 				go = { "goimports", "gofumpt" },
 				-- Conform can also run multiple formatters sequentially
-				python = { "isort", "black" },
+				python = { "isort", "black" }, -- "black"
 				-- c = { "clang-format" },
 				--
 				-- You can use a sub-list to tell conform to run *until* a formatter

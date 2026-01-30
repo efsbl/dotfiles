@@ -36,6 +36,8 @@ plug "zsh-users/zsh-completions"
 autoload -U compinit; compinit
 zstyle ':completion:*' menu select
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=696969"
+
 # let's Go
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
@@ -60,6 +62,8 @@ source <(kubectl completion zsh)
 # protobuf
 export PATH=$PATH:/usr/local/protobuf/bin
 
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 # starship
 eval "$(starship init zsh)"
@@ -77,3 +81,6 @@ esac
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# bun completions
+[ -s "/home/lemi/.bun/_bun" ] && source "/home/lemi/.bun/_bun"
