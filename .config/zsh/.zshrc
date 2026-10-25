@@ -36,7 +36,8 @@ plug "zsh-users/zsh-completions"
 autoload -U compinit; compinit
 zstyle ':completion:*' menu select
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=696969"
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=696969"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=244"
 
 # let's Go
 export PATH=$PATH:/usr/local/go/bin

@@ -40,6 +40,12 @@ return {
 				go = { "goimports", "gofumpt" },
 				-- Conform can also run multiple formatters sequentially
 				python = { "isort", "black" }, -- "black"
+				typescript = { "prettier" },
+				typescriptreact = { "prettier" },
+				javascript = { "prettier" },
+				javascriptreact = { "prettier" },
+				json = { "prettier" },
+				css = { "prettier" },
 				-- c = { "clang-format" },
 				--
 				-- You can use a sub-list to tell conform to run *until* a formatter

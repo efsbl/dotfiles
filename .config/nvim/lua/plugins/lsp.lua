@@ -124,6 +124,7 @@ return { -- LSP Configuration & Plugins
 			-- tsserver = {},
 			--
 			eslint = {},
+			ts_ls = {},
 			lua_ls = {
 				-- cmd = {...},
 				-- filetypes { ...},
